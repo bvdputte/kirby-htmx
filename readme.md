@@ -12,6 +12,7 @@ Little helper utility to keep your code DRY when uring HTMX in Kirby.
 
 1. Make a snippet for each HTMX "_interactive island_".
 2. Embed the snippet in your template via Kirby's `snippet()` helper.
+3. Use the plugin's `hxHeader()` helper to generate the required hx-data attribute
 
 [HTMX](https://htmx.org) expects the server to reply with hypermedia for HTMX requests.<br>
 Inside the snippet, use the `hxHeaders()` helper to add it together with the Hx data attributes on the wrapper element.
