@@ -24,7 +24,7 @@ On first page load, Kirby will add the snippet as always. For HTMX interaction w
 ```
 // snippets/test.php
 <section hx-trigger="click" hx-target="this" <?= hxHeaders() ?> hx-swap="outerHTML" id="test">
-	<button hx-get="<?= $page->url() ?>" hx-trigger="click">Test</button> <?= microtime() ?>
+	<button hx-get="<?= $page->url() . '/time:update' ?>" hx-trigger="click">Test</button> <?= microtime() ?>
 </section>
 ```
 
@@ -32,6 +32,10 @@ On first page load, Kirby will add the snippet as always. For HTMX interaction w
 // in templates/default.php
 <?php snippet('test'); ?>
 ```
+
+## Gotcha's
+
+1. Pages cache: this works with pages cache enabled, but you'll need do send params to a the controller otherwise the entire page will be returned from cache. This will render the plugin defunct.
 
 ## Hx-headers
 
