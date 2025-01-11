@@ -1,6 +1,6 @@
 # Kirby HTMX plugin
 
-Little helper utility to keep your code DRY when uring HTMX in Kirby.
+Little helper utility to keep your code DRY when using HTMX in Kirby.
 
 ## Installation
 
@@ -35,7 +35,7 @@ On first page load, Kirby will add the snippet as always. For HTMX interaction w
 
 ## Gotcha's
 
-1. Pages cache: this works with pages cache enabled, but you'll need do send params to a the controller otherwise the entire page will be returned from cache. This will render the plugin defunct.
+1. Pages cache: this works with pages cache enabled, but you'll need do use URL params and a controller otherwise the entire page will be returned from cache and render the plugin defunct. This will be want you want anyway, since you want to change the page content somehow.
 
 ## Hx-headers
 
