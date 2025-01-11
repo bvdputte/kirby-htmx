@@ -2,6 +2,9 @@
 
 Use Kirby\Toolkit\A;
 
+// For composer
+@include_once __DIR__ . '/vendor/autoload.php';
+
 Kirby::plugin('bvdputte/htmx', [
 	'hooks' => [
 		'page.render:before' => function($contentType, $data, $page) {

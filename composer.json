@@ -1,0 +1,19 @@
+{
+	"name": "bvdputte/kirby-htmx",
+	"description": "Little helper utility to keep your code DRY when uring HTMX in Kirby",
+	"license": "MIT",
+	"type": "kirby-plugin",
+	"version": "1.0.0",
+	"authors": [
+		{
+				"name": "Bart Vandeputte",
+				"email": "mail@bartvandeputte.be"
+		}
+	],
+	"config": {
+			"optimize-autoloader": true
+	},
+	"require": {
+			"getkirby/composer-installer": "^1.1"
+	}
+}
